@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Hesap Makinesi</string>
+    <string name="first_btn1">AC</string>
+    <string name="first_btn2">+/-</string>
+    <string name="first_btn3">%</string>
+    <string name="first_btn4">/</string>
+    <string name="second_btn1">7</string>
+    <string name="second_btn2">8</string>
+    <string name="second_btn3">9</string>
+    <string name="second_btn4">X</string>
+    <string name="third_btn1">4</string>
+    <string name="third_btn2">5</string>
+    <string name="third_btn3">6</string>
+    <string name="third_btn4">-</string>
+    <string name="fourth_btn1">1</string>
+    <string name="fourth_btn2">2</string>
+    <string name="fourth_btn3">3</string>
+    <string name="fourth_btn4">+</string>
+    <string name="fifth_btn1">0</string>
+    <string name="fifth_btn2">,</string>
+    <string name="fifth_btn3">.</string>
+    <string name="fifth_btn4">=</string>
+    <string name="plaint_text_field">0</string>
+</resources>
