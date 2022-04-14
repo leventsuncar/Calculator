@@ -10,6 +10,12 @@
         <entry key="app/src/main/res/drawable/button_effect.xml" value="0.2025" />
         <entry key="app/src/main/res/drawable/buttons.xml" value="0.2025" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2025" />
+        <entry key="app/src/main/res/layout-hdpi/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout-ldpi/activity_main.xml" value="0.67" />
+        <entry key="app/src/main/res/layout-mdpi/activity_main.xml" value="0.67" />
+        <entry key="app/src/main/res/layout-xhdpi/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout-xxhdpi/activity_main.xml" value="0.16452991452991453" />
+        <entry key="app/src/main/res/layout-xxxhdpi/activity_main.xml" value="0.150390625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/bak.xml" value="0.20052083333333334" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2025" />
