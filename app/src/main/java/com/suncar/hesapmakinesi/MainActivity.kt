@@ -21,14 +21,14 @@ class MainActivity : AppCompatActivity() {
             var btnTextValue: String = conclusion.text.toString()
 
             if (!btnTextValue.startsWith("-")) {
-                if (btnTextValue.replace("""[+|\-|x|/]""".toRegex(), "").toDouble()
+                if (btnTextValue.replace("""[+|\-|x|/|%]""".toRegex(), "").toDouble()
                         .equals("0".toDouble())
                 ) {
                     btnTextValue = ""
                 }
             } else {
                 if (btnTextValue != "-") {
-                    if (btnTextValue.replace("""[+|x|/]""".toRegex(), "").toDouble()
+                    if (btnTextValue.replace("""[+|x|/|%]""".toRegex(), "").toDouble()
                             .equals("0".toDouble())
                     ) {
                         btnTextValue = ""
@@ -66,6 +66,9 @@ class MainActivity : AppCompatActivity() {
                 R.id.button_9 -> {
                     btnTextValue += "9";
                 }
+                R.id.button_dot -> {
+                    btnTextValue += ".";
+                }
                 R.id.button_positiveNegative -> {
                     btnTextValue = if (btnTextValue.contains("-")) {
                         btnTextValue.replace("-", "")
@@ -86,7 +89,7 @@ class MainActivity : AppCompatActivity() {
         try {
             var conclusion = findViewById<EditText>(R.id.editTextConclusion)
             var operationBtn = view as Button
-            var operations = arrayOf("-", "+", "/", "x")
+            var operations = arrayOf("-", "+", "/", "x", "%")
             for (existingOperation: String in operations) {
                 run {
                     if (!(existingOperation == "-" && conclusion.text.toString().startsWith("-")))
@@ -109,6 +112,9 @@ class MainActivity : AppCompatActivity() {
                 R.id.button_minus -> {
                     operator = R.id.button_minus
                 }
+                R.id.button_percent -> {
+                    operator = R.id.button_percent
+                }
             }
             oldTextNum = conclusion.text.toString()
 
@@ -125,6 +131,9 @@ class MainActivity : AppCompatActivity() {
                 R.id.button_minus -> {
                     oldTextNum += "-"
                 }
+                R.id.button_percent -> {
+                    oldTextNum += "%"
+                }
             }
             conclusion.setText(oldTextNum)
         } catch (e: Exception) {
@@ -140,11 +149,11 @@ class MainActivity : AppCompatActivity() {
 
         var conclusion = findViewById<EditText>(R.id.editTextConclusion)
         if (conclusion.text.toString().startsWith("-")) {
-            var textBox = conclusion.text.toString().split("+", "/", "x")
+            var textBox = conclusion.text.toString().split("+", "/", "x", "%")
             oldNum = textBox?.get(0).toDouble()
             newNumber = textBox?.get(textBox.size - 1).toDouble()
         } else {
-            var textBox = conclusion.text.toString().split("+", "-", "/", "x")
+            var textBox = conclusion.text.toString().split("+", "-", "/", "x", "%")
             oldNum = textBox?.get(0).toDouble()
             newNumber = textBox?.get(textBox.size - 1).toDouble()
         }
@@ -161,6 +170,9 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.button_minus -> {
                     finalNumber = oldNum - newNumber
+                }
+                R.id.button_percent -> {
+                    finalNumber = oldNum/100*newNumber
                 }
             }
             findViewById<EditText>(R.id.editTextConclusion).setText(finalNumber.toString())

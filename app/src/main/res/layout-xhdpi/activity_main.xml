@@ -68,8 +68,8 @@
                 android:background="@drawable/buttons"
                 android:backgroundTintMode="screen"
                 android:text="@string/first_btn3"
-                android:textSize="24sp" />
-            <!--            android:onClick="percent"-->
+                android:textSize="24sp"
+                android:onClick="btnMathOperation" />
             <Button
                 android:id="@+id/button_division"
                 style="@style/Widget.AppCompat.Button"

@@ -11,14 +11,14 @@
     <EditText
         android:id="@+id/editTextConclusion"
         android:layout_width="match_parent"
-        android:layout_height="271dp"
+        android:layout_height="wrap_content"
         android:autofillHints=""
         android:background="@color/editBackground"
         android:baselineAligned="false"
         android:ems="10"
         android:gravity="right"
         android:inputType="textPersonName"
-        android:paddingTop="150dp"
+        android:paddingTop="190dp"
         android:paddingRight="10dp"
         android:text="@string/plaint_text_field"
         android:textColor="@color/white"
@@ -42,10 +42,11 @@
                 android:layout_weight="1"
                 android:background="@color/buttonBg"
                 android:drawableTintMode="src_over"
+                android:onClick="allClear"
                 android:text="@string/first_btn1"
                 android:textColor="@color/white"
-                android:textSize="24sp"
-                android:onClick="allClear"/>
+                android:textSize="24sp" />
+
             <Button
                 android:id="@+id/button_positiveNegative"
                 style="@style/Widget.AppCompat.Button"
@@ -67,7 +68,8 @@
                 android:background="@drawable/buttons"
                 android:backgroundTintMode="screen"
                 android:text="@string/first_btn3"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="btnMathOperation" />
             <!--            android:onClick="percent"-->
             <Button
                 android:id="@+id/button_division"
@@ -76,9 +78,9 @@
                 android:layout_weight="1"
                 android:background="@drawable/buttons"
                 android:backgroundTintMode="screen"
+                android:onClick="btnMathOperation"
                 android:text="@string/first_btn4"
-                android:textSize="24sp"
-                android:onClick="btnMathOperation"/>
+                android:textSize="24sp" />
         </TableRow>
 
         <TableRow
@@ -130,9 +132,9 @@
                 android:layout_weight="1"
                 android:background="@drawable/buttons"
                 android:backgroundTintMode="screen"
+                android:onClick="btnMathOperation"
                 android:text="@string/second_btn4"
-                android:textSize="24sp"
-                android:onClick="btnMathOperation"/>
+                android:textSize="24sp" />
         </TableRow>
 
         <TableRow
@@ -184,9 +186,9 @@
                 android:layout_weight="1"
                 android:background="@drawable/buttons"
                 android:backgroundTintMode="screen"
+                android:onClick="btnMathOperation"
                 android:text="@string/third_btn4"
-                android:textSize="24sp"
-                android:onClick="btnMathOperation"/>
+                android:textSize="24sp" />
         </TableRow>
 
         <TableRow
@@ -238,9 +240,9 @@
                 android:layout_weight="1"
                 android:background="@drawable/buttons"
                 android:backgroundTintMode="screen"
+                android:onClick="btnMathOperation"
                 android:text="@string/fourth_btn4"
-                android:textSize="24sp"
-                android:onClick="btnMathOperation"/>
+                android:textSize="24sp" />
         </TableRow>
 
         <TableRow
